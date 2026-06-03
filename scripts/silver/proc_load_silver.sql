@@ -230,3 +230,17 @@ BEGIN
         PRINT '>> INSERTING DATA INTO: silver.erp_px_cat_g1v2';
         INSERT INTO silver.erp_px_cat_g1v2 (id, cat, subcat, maintenance)
         SELECT id, cat, subcat, maintenance
+         FROM bronze.erp_px_cat_g1v2
+         SET @end_time=GETDATE();
+         PRINT '>> LOAD DURATION: ' + CAST(DATEDIFF(second,@start_time,@end_time) as NVARCHAR) + 'seconds';
+        PRINT '>> --------------'
+        END TRY
+ BEGIN CATCH
+ PRINT '==================================================';
+       PRINT 'ERROR OCCURED DURING LOADING SILVER LAYER';
+       PRINT 'ERROR MESSAGE'+ERROR_MESSAGE();
+       PRINT 'ERROR MESSAGE'+CAST(ERROR_NUMBER() AS NVARCHAR);
+       PRINT 'ERROR MESSAGE'+CAST(ERROR_STATE() AS NVARCHAR);
+       PRINT '==================================================';
+ END CATCH
+ END
