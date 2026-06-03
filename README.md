@@ -32,6 +32,7 @@ Develop SQL-based analytics to deliver detailed insights into:
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
 ---
+[Data warehouse diagram.drawio](https://github.com/user-attachments/files/28558029/Data.warehouse.diagram.drawio)
 
 ## 🛡 License
 
