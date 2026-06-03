@@ -8,13 +8,26 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 Everything is for Free!
 
-- **Datasets:** Access to the project dataset (CSV files)
-- **SQL Server Express:** Lightweight server for hosting your SQL database
-- **SQL Server Management Studio (SSMS):** GUI for managing and interacting with databases
-- **Git Repository:** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently
-- **DrawIO:** Design data architecture, models, flows, and diagrams
-- **Notion:** All-in-one tool for project management and organization
-- **Notion Project Steps:** Access to all project phases and tasks
+- **Datasets:** Access to the project dataset (CSV files)  
+  👉 [Kaggle Datasets](https://www.kaggle.com/datasets)
+
+- **SQL Server Express:** Lightweight server for hosting your SQL database  
+  👉 [Download SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+
+- **SQL Server Management Studio (SSMS):** GUI for managing and interacting with databases  
+  👉 [Download SSMS](https://aka.ms/ssmsfullsetup)
+
+- **Git Repository:** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently  
+  👉 [GitHub](https://github.com/)
+
+- **DrawIO:** Design data architecture, models, flows, and diagrams  
+  👉 [Draw.io Online](https://app.diagrams.net/)
+
+- **Notion:** All-in-one tool for project management and organization  
+  👉 [Notion](https://www.notion.so/)
+
+- **Notion Project Steps:** Access to all project phases and tasks  
+  👉 [Notion Templates](https://www.notion.so/templates)
 
 ## 🚀 Project Requirements
 
