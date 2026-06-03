@@ -32,9 +32,70 @@ Develop SQL-based analytics to deliver detailed insights into:
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
 ---
-Data Architecture
+## 🧱 Data Architecture
 
-The data architecture for this project follows the Medallion Architecture with Bronze, Silver, and Gold layers.
+The data architecture for this project follows the Medallion Architecture — **Bronze**, **Silver**, and **Gold** layers.
+
+### Sources
+- CRM  
+- ERP  
+**Object Type:** CSV Files  
+**Interface:** Files in Folders  
+
+---
+
+### 🥉 Bronze Layer
+Stores raw data as-is from the source systems.  
+Data is ingested from CSV Files into SQL Server Database.
+
+**Object Type:** Tables  
+**Load:**  
+- Batch Processing  
+- Full Load  
+- Truncate & Insert  
+**No Transformations**  
+**Data Model:** None (as-is)
+
+---
+
+### 🥈 Silver Layer
+This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+
+**Object Type:** Tables  
+**Load:**  
+- Batch Processing  
+- Full Load  
+- Truncate & Insert  
+**Transformations:**  
+- Data Cleansing  
+- Data Standardization  
+- Data Normalization  
+- Derived Columns  
+- Data Enrichment  
+
+---
+
+### 🥇 Gold Layer
+Houses business-ready data modeled into a star schema required for reporting and analytics.
+
+**Object Type:** Views  
+**No Load**  
+**Transformations:**  
+- Data Integrations  
+- Aggregations  
+- Business Logics  
+**Data Model:**  
+- Star Schema  
+- Flat Table  
+- Aggregated Table  
+
+---
+
+### Consume
+- BI & Reporting  
+- Ad-Hoc SQL Queries  
+- Machine Learning
+
 [Data warehouse diagram.drawio](https://github.com/user-attachments/files/28558029/Data.warehouse.diagram.drawio)
 1. **Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 
@@ -44,29 +105,7 @@ The data architecture for this project follows the Medallion Architecture with B
 
 ## 📂 Repository Structure
 
-data-warehouse-project/
-|
-├── datasets/                     # Raw datasets used for the project (ERP and CRM data)
-|
-├── docs/                         # Project documentation and architecture details
-│   ├── etl.drawio                # Draw.io file showing ETL techniques and methods
-│   ├── data_architecture.drawio  # Draw.io file showing the project's architecture
-│   ├── data_catalog.md           # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio          # Draw.io file for the data flow diagram
-│   ├── data_models.drawio        # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md     # Consistent naming guidelines for tables, columns, and files
-|
-├── scripts/                      # SQL scripts for ETL and transformations
-│   ├── bronze/                   # Scripts for extracting and loading raw data
-│   ├── silver/                   # Scripts for cleaning and transforming data
-│   ├── gold/                     # Scripts for creating analytical models
-|
-├── tests/                        # Test scripts and quality files
-|
-├── README.md                     # Project overview and instructions
-├── LICENSE                       # License information for the repository
-├── .gitignore                    # Files and directories to be ignored by Git
-└── requirements.txt              # Dependencies and requirements for the project
+
 
 
 This layout clearly separates datasets, documentation, scripts, and configuration files — a best-practice structure for data warehouse projects.  
