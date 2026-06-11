@@ -85,6 +85,8 @@ The data architecture for this project follows the Medallion Architecture — **
 **Interface:** Files in Folders  
 
 ---
+<img width="1536" height="1024" alt="Datawarehouse " src="https://github.com/user-attachments/assets/730f0a9b-c860-478c-9aa8-d5120e3e5db0" />
+
 
 ### 🥉 Bronze Layer
 Stores raw data as-is from the source systems.  
