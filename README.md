@@ -111,7 +111,7 @@ This layout clearly separates datasets, documentation, scripts, and configuratio
 Would you like me to add a short “Usage Guide” section next, explaining how each layer (bronze, silver, gold) connects with these folders?
 <img width="1536" height="1024" alt="Copilot_20260611_133129" src="https://github.com/user-attachments/assets/7f5a946f-f9d3-4bbe-8e64-0a680212b929" />
 
-
+https://www.notion.so/DATA-WAREHOUSE-370a1ae1f4ed80fda430dc80eac70002?source=copy_link
 
 ## 🛡 License
 
