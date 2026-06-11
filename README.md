@@ -111,25 +111,6 @@ This layout clearly separates datasets, documentation, scripts, and configuratio
 Would you like me to add a short “Usage Guide” section next, explaining how each layer (bronze, silver, gold) connects with these folders?
 <img width="1536" height="1024" alt="Copilot_20260611_133129" src="https://github.com/user-attachments/assets/7f5a946f-f9d3-4bbe-8e64-0a680212b929" />
 
-data-warehouse-project
-- datasets/
-  - ERP and CRM raw data
-- docs/
-  - etl.drawio → ETL techniques and methods
-  - data_architecture.drawio → Project architecture
-  - data_catalog.md → Dataset catalog with field descriptions
-  - data_flow.drawio → Data flow diagram
-  - data_models.drawio → Data models (star schema)
-  - naming-conventions.md → Naming guidelines
-- scripts/
-  - bronze/ → Extract & load raw data
-  - silver/ → Clean & transform data
-  - gold/ → Create analytical models
-- tests/ → Test scripts and quality checks
-- README.md → Project overview
-- LICENSE → License information
-- .gitignore → Ignore rules
-- requirements.txt → Dependencies
 
 
 ## 🛡 License
