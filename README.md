@@ -111,7 +111,53 @@ This layout clearly separates datasets, documentation, scripts, and configuratio
 Would you like me to add a short “Usage Guide” section next, explaining how each layer (bronze, silver, gold) connects with these folders?
 <img width="1536" height="1024" alt="Copilot_20260611_133129" src="https://github.com/user-attachments/assets/7f5a946f-f9d3-4bbe-8e64-0a680212b929" />
 
-https://www.notion.so/DATA-WAREHOUSE-370a1ae1f4ed80fda430dc80eac70002?source=copy_link
+## 🗄️ Data Warehouse Plan
+
+The Data Warehouse is designed using the **Medallion Architecture** (Bronze → Silver → Gold) to ensure scalability, reliability, and clarity in data processing.
+
+---
+
+### 🎯 Objectives
+- Centralize data from multiple sources (CRM, ERP, flat files).
+- Ensure data quality through staged transformations.
+- Provide optimized structures for analytics and BI tools.
+- Support advanced reporting and machine learning workloads.
+
+---
+
+### 🏗️ Layered Plan
+
+#### 1. **Bronze Layer (Raw Data)**
+- Stores raw ingested data exactly as received.
+- Format: CSV, JSON, or Parquet.
+- Purpose: Maintain a single source of truth without modifications.
+
+#### 2. **Silver Layer (Cleaned & Conformed Data)**
+- Applies transformations: deduplication, type casting, locale normalization.
+- Standardizes schema across sources.
+- Purpose: Provides reliable, query-ready datasets.
+
+#### 3. **Gold Layer (Business-Ready Data)**
+- Contains fact and dimension tables (Star Schema).
+- Optimized for BI dashboards, KPIs, and reporting.
+- Purpose: Enables fast insights for decision-making.
+
+---
+
+### 📊 Deliverables
+- **Dimensional Models:** Customers, Products, Time, Geography.
+- **Fact Tables:** Sales, Orders, Transactions.
+- **KPIs:** Revenue, Customer Lifetime Value, Recency, Frequency, AOR (Average Order Revenue).
+
+---
+
+### 🔗 Integration
+- **ETL/ELT Tools:** SQL Stored Procedures, BULK INSERT.
+- **Visualization:** Tableau dashboards.
+- **Documentation:** GitHub README + diagrams (Data Architecture, Star Schema).
+
+
+Link:https://www.notion.so/DATA-WAREHOUSE-370a1ae1f4ed80fda430dc80eac70002?source=copy_link
 
 ## 🛡 License
 
